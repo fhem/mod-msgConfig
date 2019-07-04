@@ -171,6 +171,7 @@ sub msgConfig_Define($$) {
 
     # create global unique device definition
     $modules{$TYPE}{defptr} = $hash;
+    $hash->{SCOPE} = "global";
 
     # set default settings on first define
     if ( $init_done && !defined( $hash->{OLDDEF} ) ) {
